@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.rcorners {
+  position: relative;
+  left: 10%;
+  overflow-x: hidden;
+  border-radius: 15px;
+  background: #AA336A;
+  padding: 10px; 
+  width: 80%;
+  height: 300px;  
+}
+
+.lbl {
+  position: relative;
+  left: 10px;
+  color: white;
+}
+
+.rcorners1 {
+  border-radius: 15px;
+  padding: 5px; 
+  width: 100px;
+}
+
+.rcornersitem {
+  border-radius: 15px;
+  padding: 5px; 
+  width: 180px;
+}
+
+.buttonrcorners {
+  border-radius: 15px;
+  padding: 5px; 
+  width: 100px;
+}
+
+.remarks {
+  border-radius: 25px;
+  padding: 20px; 
+  width: 95%;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<h2>Requisition Form</h2>
+
+<form action="/action_page.php" class="rcorners">
+  
+    <label for="product" class="lbl">Product:</label>
+    <input type="text" id="product" name="product" class="rcorners1">
+  
+  <label for="supplier" class="lbl">Supplier:</label>
+  <select id="supplier" name="supplier" class="rcorners1">
+    <option value="supplier1">supplier1</option>
+    <option value="supplier2">supplier2</option>
+    <option value="supplier3">supplier3</option>
+    <option value="supplier4">supplier4</option>
+    <option value="supplier5">supplier5</option>
+  </select>
+
+
+  <label for="qty" class="lbl">Quantity:</label>
+  <input type="text" id="qty" name="qty" class="rcorners1">
+
+
+  <label for="price" class="lbl">Price:</label>
+  <input type="text" id="price" name="price" class="rcorners1">
+
+
+  <label for="desc" class="lbl">Item Description:</label>
+  <input type="text" id="desc" name="desc" class="rcornersitem" ><br>
+
+<br><br>
+
+  <label for="remarks" class="lbl">Remarks:</label><br><br> 
+  <textarea class="remarks" id="remarks" name="remarks" rows="5"></textarea><br>
+  <br><br>
+  <center><input type="submit" class="buttonrcorners" value="Add"></center>
+</form> 
+
+</body>
+</html>
+
